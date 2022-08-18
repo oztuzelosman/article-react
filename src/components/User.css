@@ -1,0 +1,54 @@
+card__text--user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    overflow: visible;
+  }
+  
+  @media only screen and (max-width: 78.75em) {
+    .card__text--user {
+      padding: 0 2.5rem 1.5rem 2.5rem;
+      display: flex;
+    }
+  }
+  
+  .card__text--user-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  
+  .card__text--user-image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+  }
+  
+  .card__text--user-name {
+    color: var(--color-very-dark-grayish-blue);
+    font-weight: 700;
+  }
+  
+  .card__text--user-date {
+    color: var(--color-desaturated-dark-blue);
+  }
+
+  .card__text--user-share {
+    padding: 1rem;
+    border-radius: 100px;
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  

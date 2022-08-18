@@ -1,0 +1,105 @@
+.share__action {
+  background-color: var(--color-very-dark-grayish-blue);
+  padding: 1rem 3rem;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 1rem;
+  position: absolute;
+  top: 11.5rem;
+  right: -5rem;
+  /*  @media only screen and (min-width: $bp-largest) {
+      position: fixed;
+      margin-top: 165px;
+      margin-left: 666px;
+    } */
+  /*   @media only screen and (max-width: $bp-largest) {
+      width: 54rem;
+      margin-left: 5rem;
+    } */
+}
+
+@media only screen and (min-width: 78.75em) {
+  .share__action::after {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 1.75rem;
+    background-color: var(--color-very-dark-grayish-blue);
+    position: absolute;
+    top: 3rem;
+    right: 8.25rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
+  }
+}
+
+@media only screen and (max-width: 78.75em) {
+  .share__action {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 35rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin-left: -5rem;
+    top: 5.5rem;
+    left: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 69em) {
+  .share__action {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 27rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    margin-left: 5rem;
+    top: 5rem;
+    left: -7.5rem;
+  }
+}
+
+.share__action--text {
+  text-transform: uppercase;
+  margin-right: 1rem;
+  letter-spacing: 0.5rem;
+  color: var(--color-grayish-blue);
+}
+
+.share__action--fb {
+  background: transparent;
+  border: none;
+  margin-right: 1rem;
+}
+
+.share__action--tw {
+  background: transparent;
+  border: none;
+  margin-right: 1rem;
+}
+
+.share__action--pt {
+  background: transparent;
+  border: none;
+  margin-right: 1rem;
+}
