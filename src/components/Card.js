@@ -1,7 +1,7 @@
 import "./Card.css";
 import User from "./User";
 
-export default function Card({ width}) {
+export default function Card({ screenSize}) {
   return (
     <div className="card">
       <div className="card__image">
@@ -21,7 +21,7 @@ export default function Card({ width}) {
           felt slightly bare and uninviting. I’ve got some simple tips to help
           you make any room feel complete.
         </div>
-        <User width={width}/>
+        <User screenSize={screenSize}/>
       </div>
     </div>
   );

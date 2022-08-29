@@ -7,10 +7,10 @@ import { ReactComponent as Twitter } from "./images/icon-twitter.svg";
 import { ReactComponent as Pinterest } from "./images/icon-pinterest.svg";
 import MobileAction from "./MobileAction";
 
-export default function ShareAction({ width }) {
-  const [isMobile, setIsMobile] = useState(() => {return false});
+export default function ShareAction({screenSize}) {
+  const [isMobile, setIsMobile] = useState(false);
 
-  if (width <= 1260) {
+  if (screenSize <= 1260) {
     setIsMobile(true);
   }
 
